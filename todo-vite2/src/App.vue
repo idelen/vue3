@@ -9,6 +9,21 @@
 </template>
 
 <script>
+export default {
+  name: "App",
+}
+</script>
+
+<script setup>
+import { inject } from "vue"
+import TodoListContainer from "./components/TodoListContainer.vue"
+
+const today = inject('today')
+</script>
+
+
+<!--
+<script>
 import { inject } from 'vue'
 import TodoListContainer from './components/TodoListContainer.vue'
 
@@ -21,6 +36,7 @@ export default {
   components: { TodoListContainer }
 }
 </script>
+-->
 
 <style scoped>
 hgroup {
